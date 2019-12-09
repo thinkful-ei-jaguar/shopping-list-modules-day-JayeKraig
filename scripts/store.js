@@ -42,6 +42,10 @@ this.items =this.items.filter(item => item !== found);
 
 }
 
+const toggleCheckedFilter = function(){
+  this.hideCheckedItems = !this.hideCheckedItems;
+}
+
   export default {
       items,
       hideCheckedItems,
@@ -49,6 +53,7 @@ this.items =this.items.filter(item => item !== found);
       findAndDelete,
       FindAndToggleChecked,
       findById,
-      addItem 
+      addItem,
+      toggleCheckedFilter 
 
   }
